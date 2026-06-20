@@ -1,0 +1,5 @@
+name: workflow
+jobs:
+  make setup
+  make test
+  make lint
