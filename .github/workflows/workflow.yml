@@ -1,5 +1,5 @@
 name: workflow
 jobs:
-  run: make setup
-  run: make test
-  run: make lint
+  run-1: make setup
+  run-2: make test
+  run-3: make lint
