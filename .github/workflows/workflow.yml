@@ -1,6 +1,13 @@
 name: workflow
+on: [push]
+
 jobs:
-  steps:
-    run: make setup
-    run: make test
-    run: make lint
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup
+        run: make setup
+      - name: Test
+        run: make test
+      - name: Lint
+        run: make lint
